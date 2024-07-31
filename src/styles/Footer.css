@@ -8,4 +8,6 @@ p {
   text-align: left;
   margin-bottom: 1rem;
   margin-left: 8.2rem;
+  position: bottom;
+  width: 100%;
 }

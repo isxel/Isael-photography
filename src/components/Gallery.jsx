@@ -10,17 +10,41 @@ import cotaChallenger from "../assets/img/cotaChallenger.jpg";
 import carreraTopAngle from "../assets/img/carreraTopAngle.jpg";
 import carreraSFront from "../assets/img/carreraSFront.jpg";
 import carreraMidRear from "../assets/img/carreraMidRear.jpg";
+import s14Front from "../assets/img/s14Front.jpg";
+import s14Wheel from "../assets/img/s14Wheel.jpg";
+import s14TopRear from "../assets/img/s14TopRear.jpg";
+import nsxFront from "../assets/img/nsxFront.jpg";
+import nsxTopFront from "../assets/img/nsxTopFront.jpg";
+import nsxInterior from "../assets/img/nsxInterior.jpg";
+import carreraInterior from "../assets/img/carreraInterior.jpg";
+import carreraFront from "../assets/img/carreraFront.jpg";
+import carreraBadge from "../assets/img/carreraBadge.jpg";
+import gt3rsInterior from "../assets/img/gt3rsInterior.jpg";
+import gt3rsMotion from "../assets/img/gt3rsMotion.jpg";
+import gt3rsSeat from "../assets/img/gt3rsSeat.jpg";
 
 const photos = [
+  { id: 7, src: carreraTopAngle, alt: "Porsche Carrera" },
+  { id: 8, src: carreraSFront, alt: "Porsche Carrera S" },
+  { id: 9, src: carreraMidRear, alt: "Porsche Carrera" },
+  { id: 10, src: s14Wheel, alt: "Nissan 240sx" },
+  { id: 11, src: s14Front, alt: "Nissan 240sx" },
+  { id: 12, src: s14TopRear, alt: "Nissan 240sx" },
+  { id: 13, src: nsxTopFront, alt: "Acura NSX" },
+  { id: 14, src: nsxFront, alt: "Acura NSX" },
+  { id: 15, src: nsxInterior, alt: "Acura NSX" },
+  { id: 16, src: carreraInterior, alt: "Porsche Carrera" },
+  { id: 17, src: carreraFront, alt: "Porsche Carrera" },
+  { id: 18, src: carreraBadge, alt: "Porsche Carrera" },
+  { id: 19, src: gt3rsInterior, alt: "Porsche GT3RS" },
+  { id: 20, src: gt3rsMotion, alt: "Porsche GT3RS" },
+  { id: 21, src: gt3rsSeat, alt: "Porsche GT3RS" },
   { id: 1, src: cotaCivic, alt: "Eg Honda Civic" },
   { id: 2, src: cotaGT3RS, alt: "Porsche GT3RS" },
   { id: 3, src: cotaM3, alt: "BMW M3" },
   { id: 4, src: cotaNSX, alt: "Acura NSX" },
   { id: 5, src: cotaS2k, alt: "Honda S2000" },
   { id: 6, src: cotaChallenger, alt: "Dodge Challenger" },
-  { id: 7, src: carreraTopAngle, alt: "Porsche Carrera" },
-  { id: 8, src: carreraSFront, alt: "Porsche Carrera S" },
-  { id: 9, src: carreraMidRear, alt: "Porsche Carrera" },
 ];
 
 const Gallery = () => {
