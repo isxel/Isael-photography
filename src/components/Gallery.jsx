@@ -19,17 +19,24 @@ import nsxInterior from "../assets/img/nsxInterior.jpg";
 import carreraInterior from "../assets/img/carreraInterior.jpg";
 import carreraFront from "../assets/img/carreraFront.jpg";
 import carreraBadge from "../assets/img/carreraBadge.jpg";
+import flippedCarrera from "../assets/img/flippedCarrera.jpg";
 import gt3rsInterior from "../assets/img/gt3rsInterior.jpg";
 import gt3rsMotion from "../assets/img/gt3rsMotion.jpg";
 import gt3rsSeat from "../assets/img/gt3rsSeat.jpg";
+import r32Front from "../assets/img/r32Front.jpg";
+import r32Rear from "../assets/img/r32Rear.jpg";
+import r32RearLow from "../assets/img/r32RearLow.jpg";
 
 const photos = [
   { id: 7, src: carreraTopAngle, alt: "Porsche Carrera" },
-  { id: 8, src: carreraSFront, alt: "Porsche Carrera S" },
+  { id: 8, src: flippedCarrera, alt: "Porsche Carrera S" },
   { id: 9, src: carreraMidRear, alt: "Porsche Carrera" },
   { id: 10, src: s14Wheel, alt: "Nissan 240sx" },
   { id: 11, src: s14Front, alt: "Nissan 240sx" },
   { id: 12, src: s14TopRear, alt: "Nissan 240sx" },
+  { id: 22, src: r32Front, alt: "Nissan R32" },
+  { id: 23, src: r32RearLow, alt: "Nissan R32" },
+  { id: 24, src: r32Rear, alt: "Nissan R32" },
   { id: 13, src: nsxTopFront, alt: "Acura NSX" },
   { id: 14, src: nsxFront, alt: "Acura NSX" },
   { id: 15, src: nsxInterior, alt: "Acura NSX" },

@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
+import Commission from "./pages/Commission";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/commission" element={<Commission />} />
         <Route path="/" element={<Gallery />} />
         <Route path="/" element={<Footer />} />
       </Routes>

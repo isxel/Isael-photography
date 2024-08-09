@@ -4,7 +4,7 @@ import "./../styles/Footer.css";
 
 function footer() {
   return (
-    <footer>
+    <footer className="footer-container">
       <p>© 2024 Isael Ramirez / Driveisx</p>
     </footer>
   );

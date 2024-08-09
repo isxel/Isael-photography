@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
-p {
+/* Footer specific styles */
+.footer-container p {
+  margin-left: 8.2rem;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   font-weight: 300;
   color: #000000;
   text-align: left;
   margin-bottom: 1rem;
-  margin-left: 8.2rem;
-  position: bottom;
   width: 100%;
 }
+
+/* Reset the p tag globally or in specific containers */
