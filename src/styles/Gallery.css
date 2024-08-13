@@ -1,9 +1,30 @@
 /* src/styles/Gallery.css */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Adjusts for smaller screens */
   gap: 16px;
-  padding: 96px;
+  padding: 16px;
+}
+
+/* Adjust for larger screens */
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 items per row for desktop view */
+    padding: 96px;
+  }
 }
 
 .gallery-item {

@@ -2,22 +2,44 @@
 
 .about-container {
   display: flex;
-  align-items: flex-start; /* Align items at the start of the flex container */
-  padding: 130px;
+  flex-direction: column; /* Stack items on top of each other for smaller screens */
+  align-items: center; /* Center align items on small screens */
+  padding: 32px;
   gap: 16px; /* Space between the image and text */
+}
+
+/* Adjust layout for larger screens */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row; /* Row layout for medium and larger screens */
+    align-items: flex-start; /* Align items at the start of the flex container */
+    padding: 64px;
+    gap: 32px;
+  }
 }
 
 .about-image img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  margin-bottom: 16px; /* Add some space below the image for small screens */
 }
 
+/* Text container */
 .about-text {
-  max-width: 600px;
+  max-width: 100%;
   display: flex;
   flex-direction: column; /* Stack h2 and p vertically */
   justify-content: flex-start; /* Align text to the top of the container */
+  text-align: center; /* Center-align text for small screens */
+}
+
+/* Adjust text alignment for larger screens */
+@media (min-width: 768px) {
+  .about-text {
+    max-width: 600px;
+    text-align: left; /* Left-align text for larger screens */
+  }
 }
 
 h2 {
@@ -27,11 +49,9 @@ h2 {
 }
 
 p {
-  margin-left: 0; /* or another value appropriate for the general layout */
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem; /* Reset other styles as needed */
-  font-weight: 2rem;
+  font-size: 1rem;
+  font-weight: normal;
   color: #000000;
-  text-align: left;
   margin-bottom: 1rem;
 }

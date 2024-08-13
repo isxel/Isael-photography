@@ -32,6 +32,12 @@ function About() {
           vehicles, preserving the essence of their individuality through my
           camera lens.
         </p>
+        <h2>My Tools</h2>
+        <p>
+          I use a Sony a6000 for my automotive photography. I also use Adobe
+          Lightroom and Photoshop to edit my photos, ensuring that each image is
+          a true reflection of the car and the owner's vision.
+        </p>
       </div>
     </div>
   );
