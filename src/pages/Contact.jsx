@@ -106,7 +106,8 @@ function Contact() {
         )}
 
         <button type="submit" className="contact-form-submit">
-          Submit
+          {/* Submit */}
+          Feature Coming Soon
         </button>
       </form>
 

@@ -44,7 +44,8 @@ select {
 }
 
 .contact-form-submit {
-  background-color: #333;
+  /* background-color: #333; */ /* Change Back once feature is implemented */
+  background-color: #a3a3a3;
   color: #fff;
   padding: 10px 20px;
   font-family: "Montserrat", sans-serif;
