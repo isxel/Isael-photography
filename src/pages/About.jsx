@@ -9,7 +9,7 @@ function About() {
         <img src={myImage} alt="Isael Ramirez" />
       </div>
       <div className="about-text">
-        <h2>About Me</h2>
+        <h2 className="about-headings">About Me</h2>
         <p>
           Hello, I'm Isael Ramirez, a recent graduate with a degree in Computer
           Science based in Austin, Texas. My passion for cars and the vibrant

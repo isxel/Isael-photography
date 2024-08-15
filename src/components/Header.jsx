@@ -5,7 +5,7 @@ import "./../styles/Header.css";
 function Header() {
   return (
     <header>
-      <h1>ISAEL RAMIREZ</h1>
+      <h1 className="header-title">ISAEL RAMIREZ</h1>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/commission">Commission</Link>

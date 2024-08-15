@@ -1,63 +1,163 @@
 /* src/styles/Contact.css */
 
 .contact-page-container {
-  padding: 96px 16px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  max-width: 600px;
 }
 
 .contact-page-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form-submit {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-page-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
   margin-bottom: 1rem;
-  color: #000000;
+  text-align: center;
 }
 
 .contact-page-description {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
-  color: #333333;
-}
-
-.contact-page-info {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  text-align: center;
+  color: #333;
 }
 
 .contact-page-email,
 .contact-page-instagram {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
-  color: #0073e6;
+  color: #007bff;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 .contact-page-email:hover,
 .contact-page-instagram:hover {
-  color: #005bb5;
+  text-decoration: underline;
 }
 
-/* Responsiveness */
-@media (min-width: 768px) {
+.contact-form-submit:hover {
+  background-color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .contact-page-container {
-    padding: 96px;
+    padding: 10px;
   }
 
   .contact-page-title {
-    font-size: 3rem;
-  }
-
-  .contact-page-description,
-  .contact-page-email,
-  .contact-page-instagram {
     font-size: 1.5rem;
   }
 
-  .contact-page-info {
-    flex-direction: row;
-    justify-content: center;
-    gap: 32px;
+  input,
+  select {
+    font-size: 0.9rem;
+    padding: 8px;
   }
+
+  .contact-form-submit {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+.faq-section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: lighter;
+}
+
+.faq-section {
+  /* width: 700px; */
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-question {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #000;
+  background-color: #f4f4f4;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.faq-answer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.faq-icon {
+  font-size: 1.2rem;
+  color: #000;
+  margin-left: 10px;
 }
