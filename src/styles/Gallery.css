@@ -1,4 +1,9 @@
 /* src/styles/Gallery.css */
+html,
+body {
+  overflow-x: hidden;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(

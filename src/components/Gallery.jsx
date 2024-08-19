@@ -1,6 +1,6 @@
 // src/components/Gallery.jsx
 import React from "react";
-import "../styles/Gallery.css";
+import "./../styles/Gallery.css";
 import cotaCivic from "../assets/img/cotaCivic.jpg";
 import cotaGT3RS from "../assets/img/cotaGT3RS.jpg";
 import cotaM3 from "../assets/img/cotaM3.jpg";
