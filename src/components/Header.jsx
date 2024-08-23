@@ -1,3 +1,12 @@
+/**
+ * Header component
+ * Renders the header of the page
+ *
+ * Contains the title of the page and navigation links
+ *
+ * @returns Header component
+ */
+
 import React from "react";
 import { Link } from "react-router-dom";
 import "./../styles/Header.css";

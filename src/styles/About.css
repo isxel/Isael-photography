@@ -19,7 +19,8 @@
 }
 
 .about-image img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1000px;
   height: auto;
   border-radius: 10px;
   margin-bottom: 16px; /* Add some space below the image for small screens */

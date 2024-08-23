@@ -1,5 +1,14 @@
+/**
+ * Commissions page
+ * Renders entire commissions page content
+ *
+ * @returns Commissions component
+ */
 import React from "react";
 import "./../styles/Comission.css";
+/**
+ * Import statements with paths to images used on page
+ */
 import supraGarageRear from "../assets/img/supraGarageRear.jpg";
 import supraGarageSide from "../assets/img/supraGarageSide.jpg";
 import supraGarageFront from "../assets/img/supraGarageFront.jpg";
@@ -44,6 +53,17 @@ import siInterior from "../assets/img/siInterior.jpg";
 import siBadge from "../assets/img/siBadge.jpg";
 import siRear from "../assets/img/siRear.jpg";
 
+/**
+ * Array of phoshoot objects
+ *
+ * Each object contains:
+ * - title: the title of the photoshoot
+ * - description: a brief description about the photoshoot
+ * - images: an array of image objects
+ *   -id: unique identifier for the image
+ *   -src: path to image file (imported above)
+ *   -alt: alternative text for the image
+ */
 const Commissions = () => {
   const shoots = [
     {
@@ -141,6 +161,9 @@ const Commissions = () => {
     },
   ];
 
+  /**
+   * Render the Commissions component
+   */
   return (
     <div className="commissions-container">
       {shoots.map((shoot, index) => (

@@ -1,3 +1,11 @@
+/**
+ * Contact page
+ * Renders entire contact page content
+ * Contains a form for users to submit inquiries
+ * Also contains a FAQ section
+ *
+ * @returns Contact component
+ */
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./../styles/Contact.css";
@@ -23,22 +31,30 @@ function Contact() {
   const [contactMethod, setContactMethod] = useState("");
   const [contactValue, setContactValue] = useState("");
 
+  /**
+   * Handle the change of the contact method
+   * if the method changes, clear the input
+   */
   const handleContactChange = (e) => {
     setContactMethod(e.target.value);
-    setContactValue(""); // Clear the input when the method changes
+    setContactValue("");
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Prepare the email parameters
+    /**
+     * Template parameters for the email
+     */
     const templateParams = {
       from_name: e.target.name.value,
       car: e.target.car.value,
       contactMethod: contactValue,
     };
 
-    // Send the email
+    /**
+     * Send email using EmailJS
+     */
     emailjs
       .send(
         "service_8r4fi2d",
@@ -56,6 +72,9 @@ function Contact() {
       );
   };
 
+  /**
+   * Return the contact page content
+   */
   return (
     <div className="contact-page-container">
       <h1 className="contact-page-title">Contact</h1>

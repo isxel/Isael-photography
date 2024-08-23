@@ -1,5 +1,3 @@
-/* src/styles/Contact.css */
-
 .contact-page-container {
   display: flex;
   flex-direction: column;
@@ -44,7 +42,7 @@ select {
 }
 
 .contact-form-submit {
-  /* background-color: #333; */ /* Change Back once feature is implemented */
+  background-color: #333;
   background-color: #a3a3a3;
   color: #fff;
   padding: 10px 20px;

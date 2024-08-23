@@ -1,6 +1,17 @@
-// src/components/Gallery.jsx
+/**
+ * Gallery component
+ * Displays a grid of images
+ *
+ * @returns Gallery component
+ */
+
 import React from "react";
 import "./../styles/Gallery.css";
+
+/**
+ * Importing images that wull be used within gallery component
+ * Each import is an individual image file
+ */
 import cotaCivic from "../assets/img/cotaCivic.jpg";
 import cotaGT3RS from "../assets/img/cotaGT3RS.jpg";
 import cotaM3 from "../assets/img/cotaM3.jpg";
@@ -27,6 +38,14 @@ import r32Front from "../assets/img/r32Front.jpg";
 import r32Rear from "../assets/img/r32Rear.jpg";
 import r32RearLow from "../assets/img/r32RearLow.jpg";
 
+/**
+ * Array of photo objects to be used within the gallery component
+ * each object contains:
+ * - id: unique identifier for the image
+ * - src: path to image file (imported above)
+ * - alt: alternative text for the image
+ * - loading: lazy loading attribute for the image
+ */
 const photos = [
   { id: 7, src: carreraTopAngle, alt: "Porsche Carrera", loading: "lazy" },
   { id: 8, src: flippedCarrera, alt: "Porsche Carrera S", loading: "lazy" },
@@ -54,6 +73,13 @@ const photos = [
   { id: 6, src: cotaChallenger, alt: "Dodge Challenger", loading: "lazy" },
 ];
 
+/**
+ * Gallery component displays a grid of images
+ *
+ * The component maps over the photos array and renders each image
+ *
+ * @returns Gallery component
+ */
 const Gallery = () => {
   return (
     <div className="gallery">

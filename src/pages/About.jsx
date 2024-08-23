@@ -1,6 +1,13 @@
+/**
+ * About page component
+ * Renders the about page content
+ * Contains information about myself and the tools I use
+ *
+ * @returns About component
+ */
+
 import React from "react";
 import "./../styles/About.css";
-import myImage from "../assets/img/myImage.jpeg";
 import aboutMeImage from "../assets/img/aboutMe.jpg";
 
 function About() {
