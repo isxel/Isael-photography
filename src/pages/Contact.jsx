@@ -9,6 +9,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./../styles/Contact.css";
+import Toast from "../components/Toast";
 
 function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +31,9 @@ function FAQItem({ question, answer }) {
 function Contact() {
   const [contactMethod, setContactMethod] = useState("");
   const [contactValue, setContactValue] = useState("");
+  const [car, setCar] = useState("");
+  const [name, setName] = useState("");
+  const [messageSent, setMessageSent] = useState(false);
 
   /**
    * Handle the change of the contact method
@@ -42,6 +46,9 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setContactValue("");
+    setContactMethod("");
+    const form = e.target;
 
     /**
      * Template parameters for the email
@@ -65,6 +72,8 @@ function Contact() {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          setMessageSent(true);
+          form.reset();
         },
         (err) => {
           console.error("FAILED...", err);
@@ -146,6 +155,13 @@ function Contact() {
           Submit
         </button>
       </form>
+
+      {messageSent && (
+        <Toast
+          message="Your message has been sent successfully!"
+          onClose={() => setMessageSent(false)}
+        />
+      )}
 
       <h2 className="faq-section-title">FAQ</h2>
       <div className="faq-section">
