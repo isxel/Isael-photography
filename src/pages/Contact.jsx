@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "./../styles/Contact.css";
 
 function FAQItem({ question, answer }) {
@@ -29,13 +30,30 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted with:", {
-      name: e.target.name.value,
+
+    // Prepare the email parameters
+    const templateParams = {
+      from_name: e.target.name.value,
       car: e.target.car.value,
-      contactMethod,
-      contactValue,
-    });
+      contactMethod: contactValue,
+    };
+
+    // Send the email
+    emailjs
+      .send(
+        "service_8r4fi2d",
+        "template_fhrj49v",
+        templateParams,
+        "7Znma6wYGBNa-YkUP"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (err) => {
+          console.error("FAILED...", err);
+        }
+      );
   };
 
   return (
@@ -106,8 +124,7 @@ function Contact() {
         )}
 
         <button type="submit" className="contact-form-submit">
-          {/* Submit */}
-          Feature Coming Soon
+          Submit
         </button>
       </form>
 
