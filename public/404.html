@@ -7,9 +7,8 @@
   </head>
   <body>
     <script type="text/javascript">
-      // Redirect all 404 routes to index.html for React Router to handle
-      var path = window.location.pathname.replace("/", "");
-      window.location.replace("/" + path);
+      // Redirect to index.html to allow React Router to handle the route
+      window.location.replace("/"); // Always redirect to the root
     </script>
   </body>
 </html>
