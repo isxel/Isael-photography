@@ -7,11 +7,9 @@
   </head>
   <body>
     <script type="text/javascript">
-      // Redirect all 404 routes to index.html
-      var path = window.location.pathname.replace("/Isael-photography", "");
-      window.location.replace(
-        "/Isael-photography" + path + window.location.search
-      );
+      // Redirect all 404 routes to index.html for React Router to handle
+      var path = window.location.pathname.replace("/your-base-path/", ""); // Adjust '/your-base-path/' if necessary
+      window.location.replace("/" + path);
     </script>
   </body>
 </html>
