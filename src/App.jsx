@@ -14,7 +14,7 @@ import Commission from "./pages/Commission";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Header />
       <Routes>
         <Route path="/" element={<Gallery />} />

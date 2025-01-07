@@ -1,8 +1,8 @@
 {
-  "name": "isael-photography",
+  "name": "Isael-photography",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://isxel.github.io/Isael-photography",
+  "homepage": "https://www.driveisx.me/",
   "type": "module",
   "scripts": {
     "dev": "vite",
