@@ -12,7 +12,6 @@ import { Link } from "react-router-dom";
 import "./../styles/Header.css";
 
 function Header() {
-  console.log("Header component rendered");
   return (
     <header>
       <h1 className="header-title">ISAEL RAMIREZ</h1>
