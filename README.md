@@ -6,11 +6,6 @@ Welcome to my **Photography Portfolio**, a site I built to showcase my photograp
 
 ---
 
-## 📸 Preview  
-![Photography Portfolio Screenshot](https://your-screenshot-link.com)  
-
----
-
 ## ✨ Features  
 - **Clean & minimal design** for easy navigation  
 - **Responsive layout** optimized for all devices  
