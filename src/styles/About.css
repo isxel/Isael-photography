@@ -1,18 +1,15 @@
-/* src/styles/About.css */
-
 .about-container {
   display: flex;
-  flex-direction: column; /* Stack items on top of each other for smaller screens */
-  align-items: center; /* Center align items on small screens */
+  flex-direction: column;
+  align-items: center;
   padding: 32px;
-  gap: 16px; /* Space between the image and text */
+  gap: 16px;
 }
 
-/* Adjust layout for larger screens */
 @media (min-width: 768px) {
   .about-container {
-    flex-direction: row; /* Row layout for medium and larger screens */
-    align-items: flex-start; /* Align items at the start of the flex container */
+    flex-direction: row;
+    align-items: flex-start;
     padding: 64px;
     gap: 32px;
   }
@@ -23,23 +20,21 @@
   max-width: 1000px;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 16px; /* Add some space below the image for small screens */
+  margin-bottom: 16px;
 }
 
-/* Text container */
 .about-text {
   max-width: 100%;
   display: flex;
-  flex-direction: column; /* Stack h2 and p vertically */
-  justify-content: flex-start; /* Align text to the top of the container */
-  text-align: center; /* Center-align text for small screens */
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
 }
 
-/* Adjust text alignment for larger screens */
 @media (min-width: 768px) {
   .about-text {
     max-width: 600px;
-    text-align: left; /* Left-align text for larger screens */
+    text-align: left;
   }
 }
 

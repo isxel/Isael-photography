@@ -5,12 +5,11 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   position: sticky;
   top: 0;
   z-index: 1000;
   padding: 0 1rem;
-  flex-wrap: wrap; /* This allows the elements to wrap on smaller screens */
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -19,8 +18,8 @@ h1 {
   font-weight: 300;
   color: #000000;
   margin: 1rem 0;
-  flex-basis: 100%; /* Full width on mobile */
-  text-align: center; /* Center title on mobile */
+  flex-basis: 100%;
+  text-align: center;
 }
 
 nav {
@@ -29,8 +28,8 @@ nav {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   margin: 0 0.5rem 1rem;
-  flex-basis: 100%; /* Full width on mobile */
-  justify-content: center; /* Center navigation links on mobile */
+  flex-basis: 100%;
+  justify-content: center;
 }
 
 nav a {
